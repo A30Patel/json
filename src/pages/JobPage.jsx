@@ -10,7 +10,7 @@ const navigate = useNavigate();
    
 
 const onDeleteClick = (jobId) => {
-  const confrim = window.confirm('Are you sure want to delete this listing?')
+  const confirm = window.confirm('Are you sure you want to delete this listing?'); // Fixed typo
 
   if (!confirm) return;
 
@@ -20,6 +20,7 @@ const onDeleteClick = (jobId) => {
 
   navigate('/jobs');
 }
+
   return (
   <>
    <section>
